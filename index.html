@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nardos & Terefe | Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Nardos Elias and Terefe Tariku on January 17, 2027.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
+
+:root {
+  --rose: #ad6879;
+  --rose-dark: #824556;
+  --cream: #fffaf6;
+  --ink: #45363a;
+  --gold: #b99457;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", "Noto Sans Ethiopic", sans-serif;
+  line-height: 1.65;
+}
+button, input, select, textarea { font: inherit; }
+button, .button {
+  display: inline-block;
+  border: 0;
+  border-radius: 28px;
+  padding: 12px 20px;
+  background: var(--rose);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+button:hover, .button:hover { background: var(--rose-dark); }
+.topbar {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eedde0;
+}
+.topbar button { padding: 8px 16px; }
+.hero {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 65px 18px;
+  background:
+    linear-gradient(#fffaf6d9, #fffaf6ed),
+    url("assets/photo1.jpg") center/cover;
+  border-bottom: 1px solid #eedde0;
+}
+.hero-inner {
+  width: min(100%, 760px);
+  padding: 32px 20px;
+  border: 1px solid #d9bca6;
+  outline: 5px solid #fffaf6b8;
+  outline-offset: -12px;
+  background: #fffaf6b8;
+}
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--rose-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+h1 {
+  font-family: Georgia, "Noto Sans Ethiopic", serif;
+  font-size: clamp(35px, 7vw, 64px);
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 18px 0;
+}
+.ampersand { color: var(--gold); font-style: italic; }
+.hero-date { font-size: 19px; margin: 20px 0; }
+.floral { color: var(--rose); font-size: 30px; }
+section { padding: 55px 18px; }
+.section-inner { max-width: 900px; margin: auto; }
+h2 {
+  font-family: Georgia, "Noto Sans Ethiopic", serif;
+  font-size: clamp(27px, 5vw, 38px);
+  text-align: center;
+  font-weight: 400;
+  color: var(--rose-dark);
+  margin: 0 0 14px;
+}
+.intro { text-align: center; max-width: 650px; margin: 0 auto 26px; }
+.details-grid, .count-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.detail, .count-item {
+  background: white;
+  border: 1px solid #eedde0;
+  border-radius: 15px;
+  padding: 20px 12px;
+  text-align: center;
+}
+.detail strong { display: block; color: var(--rose-dark); margin-bottom: 5px; }
+.count-item strong {
+  display: block;
+  color: var(--rose-dark);
+  font-size: clamp(24px, 5vw, 38px);
+}
+.count-item span { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.soft { background: #f8edf0; }
+.center { text-align: center; }
+.map-frame {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 14px;
+  margin: 20px 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 25px;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f1e3e3;
+}
+form {
+  max-width: 560px;
+  margin: 25px auto 0;
+  padding: 24px;
+  background: white;
+  border: 1px solid #eedde0;
+  border-radius: 16px;
+}
+label { display: block; margin: 13px 0 5px; font-weight: 700; }
+input, select, textarea {
+  width: 100%;
+  border: 1px solid #d8c7ca;
+  border-radius: 9px;
+  padding: 12px;
+  background: #fffdfb;
+  color: var(--ink);
+}
+textarea { min-height: 95px; resize: vertical; }
+form button { width: 100%; margin-top: 18px; }
+.note { font-size: 13px; color: #76656a; }
+footer {
+  padding: 30px 18px;
+  text-align: center;
+  background: #f8edf0;
+  color: var(--rose-dark);
+}
+@media (max-width: 600px) {
+  .details-grid, .count-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gallery img { height: 175px; }
+  .hero { min-height: 70vh; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span>💐 Nardos & Terefe</span>
+  <button type="button" id="languageButton" onclick="toggleLanguage()">አማርኛ</button>
+  <button type="button" id="musicButton" onclick="toggleMusic()">♫ Play Music</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="floral">❦ ❀ ❦</div>
+      <p class="kicker" data-en="Together with our families" data-am="ከቤተሰቦቻችን ጋር">Together with our families</p>
+      <h1>
+        NARDOS ELIAS
+        <br><span class="ampersand">&</span><br>
+        TEREFE TARIKU
+      </h1>
+      <p data-en="Joyfully invite you to celebrate our wedding"
+         data-am="የሠርጋችንን ቀን ከእኛ ጋር እንዲያከብሩ በደስታ እንጋብዛለን">
+        Joyfully invite you to celebrate our wedding
+      </p>
+      <p class="hero-date">January 17, 2027</p>
+      <p>Evangelical College · Morning ceremony</p>
+      <a class="button" href="#rsvp" data-en="RSVP" data-am="መልስ ይስጡ">RSVP</a>
+      <div class="floral">❦</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <h2 data-en="Counting Down to Our Day" data-am="እስከ ሠርጋችን ቀን የቀሩ">Counting Down to Our Day</h2>
+      <p class="intro" data-en="We cannot wait to celebrate this special day with you."
+         data-am="ይህንን ልዩ ቀን ከእናንተ ጋር ለማክበር በጉጉት እንጠብቃለን።">
+        We cannot wait to celebrate this special day with you.
+      </p>
+      <div class="count-grid" aria-live="polite">
+        <div class="count-item"><strong id="days">--</strong><span>Days</span></div>
+        <div class="count-item"><strong id="hours">--</strong><span>Hours</span></div>
+        <div class="count-item"><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div class="count-item"><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+      <p class="note center">Countdown time: 9:00 AM Ethiopia time (UTC+3), provisional.</p>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="section-inner">
+      <h2 data-en="Wedding Details" data-am="የሠርጉ ዝርዝር">Wedding Details</h2>
+      <p class="intro" data-en="Please join us for a beautiful beginning."
+         data-am="ለዚህ ውብ አዲስ ጅማሬ ከእኛ ጋር ይሁኑ።">
+        Please join us for a beautiful beginning.
+      </p>
+      <div class="details-grid">
+        <div class="detail">
+          <strong data-en="Date" data-am="ቀን">Date</strong>
+          January 17, 2027
+        </div>
+        <div class="detail">
+          <strong data-en="Time" data-am="ሰዓት">Time</strong>
+          9:00 AM (provisional)
+        </div>
+        <div class="detail">
+          <strong data-en="Venue" data-am="ቦታ">Venue</strong>
+          Evangelical College
+        </div>
+      </div>
+      <div class="center" style="margin-top:24px">
+        <a class="button" target="_blank" rel="noopener noreferrer"
+           href="https://maps.app.goo.gl/mwLbwu49Vh9n84f96?g_st=ac"
+           data-en="Open Location in Google Maps" data-am="ቦታውን በGoogle Maps ይክፈቱ">
+          Open Location in Google Maps
+        </a>
+      </div>
+      <iframe class="map-frame"
+        title="Map showing Evangelical College"
+        loading="lazy"
+        src="https://maps.google.com/maps?q=Evangelical%20College%2C%20Ethiopia&output=embed">
+      </iframe>
+      <p class="note center">Use the Google Maps button above for the exact link provided by the couple.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner">
+      <h2 data-en="Our Memories" data-am="የእኛ ትዝታዎች">Our Memories</h2>
+      <p class="intro" data-en="A few favorite moments from our journey together."
+         data-am="ከአብረን ከተጓዝንባቸው ጊዜያት የተወሰዱ ተወዳጅ ትዝታዎች።">
+        A few favorite moments from our journey together.
+      </p>
+      <div class="gallery">
+        <img src="assets/photo1.jpg" alt="Nardos and Terefe, photo 1">
+        <img src="assets/photo2.jpg" alt="Nardos and Terefe, photo 2">
+        <img src="assets/photo3.jpg" alt="Nardos and Terefe, photo 3">
+        <img src="assets/photo4.jpg" alt="Nardos and Terefe, photo 4">
+        <img src="assets/photo5.jpg" alt="Nardos and Terefe, photo 5">
+        <img src="assets/photo6.jpg" alt="Nardos and Terefe, photo 6">
+      </div>
+      <p class="note center">Replace these six sample filenames with your own photos. The photos must be uploaded to the assets folder.</p>
+    </div>
+  </section>
+
+  <section class="soft" id="rsvp">
+    <div class="section-inner">
+      <h2 data-en="Kindly RSVP" data-am="እባክዎ መልስ ይስጡ">Kindly RSVP</h2>
+      <p class="intro" data-en="Please let us know if you can join our celebration."
+         data-am="በደስታችን ላይ መገኘት እንደሚችሉ ያሳውቁን።">
+        Please let us know if you can join our celebration.
+      </p>
+      <form id="rsvpForm">
+        <label for="guestName" data-en="Your name" data-am="ስምዎ">Your name</label>
+        <input id="guestName" name="guestName" required autocomplete="name" placeholder="Enter your name">
+
+        <label for="guestCount" data-en="Number attending" data-am="የሚመጡ ሰዎች ብዛት">Number attending</label>
+        <select id="guestCount" name="guestCount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5 or more">5 or more</option>
+        </select>
+
+        <label for="guestMessage" data-en="Message (optional)" data-am="መልዕክት (አማራጭ)">Message (optional)</label>
+        <textarea id="guestMessage" name="guestMessage" placeholder="Write a message"></textarea>
+
+        <button type="submit" data-en="Send RSVP on WhatsApp" data-am="መልሱን በWhatsApp ይላኩ">Send RSVP on WhatsApp</button>
+        <p class="note">WhatsApp will open with your message ready. Tap Send to submit your RSVP.</p>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-inner center">
+      <h2 data-en="Share Our Invitation" data-am="ግብዣችንን ያጋሩ">Share Our Invitation</h2>
+      <p data-en="We would be delighted if you shared our special day."
+         data-am="የደስታችንን ቀን ከሌሎች ጋር ቢያጋሩ ደስ ይለናል።">
+        We would be delighted if you shared our special day.
+      </p>
+      <button type="button" onclick="shareInvitation()" data-en="Share on WhatsApp" data-am="በWhatsApp ያጋሩ">Share on WhatsApp</button>
+      <p id="shareStatus" class="note" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="floral">❦ ❀ ❦</div>
+  <p>NARDOS ELIAS & TEREFE TARIKU</p>
+  <p>January 17, 2027 · Evangelical College</p>
+  <p>With love, we look forward to celebrating with you.</p>
+</footer>
+
+<audio id="weddingMusic" src="assets/wedding-song.mp3" loop preload="none"></audio>
+
+<script>
+const RSVP_WHATSAPP = "251911834172";
+const MAP_LINK = "https://maps.app.goo.gl/mwLbwu49Vh9n84f96?g_st=ac";
+
+// Temporary ceremony time: 9:00 AM in Ethiopia (UTC+3).
+// Update this when the exact ceremony time is confirmed.
+const WEDDING_DATE = "2027-01-17T09:00:00+03:00";
+
+let currentLanguage = "en";
+
+function updateCountdown() {
+  const target = new Date(WEDDING_DATE).getTime();
+  const difference = target - Date.now();
+
+  const values = {
+    days: Math.max(0, Math.floor(difference / 86400000)),
+    hours: Math.max(0, Math.floor((difference / 3600000) % 24)),
+    minutes: Math.max(0, Math.floor((difference / 60000) % 60)),
+    seconds: Math.max(0, Math.floor((difference / 1000) % 60))
+  };
+
+  Object.entries(values).forEach(([id, value]) => {
+    document.getElementById(id).textContent = value;
+  });
+
+  if (difference <= 0) {
+    document.querySelector(".count-grid").setAttribute("aria-label", "The wedding date has arrived.");
+  }
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "am" : "en";
+  document.documentElement.lang = currentLanguage === "en" ? "en" : "am";
+
+  document.querySelectorAll("[data-en][data-am]").forEach(element => {
+    element.textContent = element.getAttribute("data-" + currentLanguage);
+  });
+
+  document.getElementById("languageButton").textContent =
+    currentLanguage === "en" ? "አማርኛ" : "English";
+}
+
+async function toggleMusic() {
+  const music = document.getElementById("weddingMusic");
+  const button = document.getElementById("musicButton");
+
+  if (music.paused) {
+    try {
+      await music.play();
+      button.textContent = currentLanguage === "en" ? "♫ Pause Music" : "♫ ሙዚቃ ያቁሙ";
+    } catch (error) {
+      alert("Please upload assets/wedding-song.mp3 first, then try again.");
+    }
+  } else {
+    music.pause();
+    button.textContent = currentLanguage === "en" ? "♫ Play Music" : "♫ ሙዚቃ ያጫውቱ";
+  }
+}
+
+document.getElementById("rsvpForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("guestName").value.trim();
+  const count = document.getElementById("guestCount").value;
+  const message = document.getElementById("guestMessage").value.trim();
+
+  if (!name) {
+    alert("Please enter your name.");
+    return;
+  }
+
+  const rsvpText =
+    "Wedding RSVP\n\n" +
+    "NARDOS ELIAS & TEREFE TARIKU\n" +
+    "Date: January 17, 2027\n" +
+    "Venue: Evangelical College\n\n" +
+    "Guest name: " + name + "\n" +
+    "Number attending: " + count + "\n" +
+    "Message: " + (message || "No additional message");
+
+  const url = "https://wa.me/" + RSVP_WHATSAPP + "?text=" +
+    encodeURIComponent(rsvpText);
+
+  window.open(url, "_blank", "noopener");
+});
+
+async function shareInvitation() {
+  const shareText = "You are invited to the wedding of NARDOS ELIAS & TEREFE TARIKU on January 17, 2027 at Evangelical College.";
+
+  // Once published, this will be the live website URL.
+  const invitationUrl = window.location.href;
+  const whatsappUrl = "https://wa.me/?text=" +
+    encodeURIComponent(shareText + "\n" + invitationUrl);
+
+  window.open(whatsappUrl, "_blank", "noopener");
+}
+
+</script>
+</body>
+</html>
